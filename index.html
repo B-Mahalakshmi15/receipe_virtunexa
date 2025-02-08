@@ -1,131 +1,162 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casual Chat</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Contacts Section -->
-    <div class="contacts">
-      <div class="contact-header">
-        <h2>Friends</h2>
-      </div>
-      <ul id="contactList">
-        <li onclick="startChat('Ava')">
-          <div class="icon" style="background-color: #f28b82;">A</div>Ava
-        </li>
-        <li onclick="startChat('Olivia')">
-          <div class="icon" style="background-color: #fbbc04;">O</div>Olivia
-        </li>
-        <li onclick="startChat('Emma')">
-          <div class="icon" style="background-color: #34a853;">E</div>Emma
-        </li>
-        <li onclick="startChat('Sophia')">
-          <div class="icon" style="background-color: #4285f4;">S</div>Sophia
-        </li>
-        <li onclick="startChat('Mia')">
-          <div class="icon" style="background-color: #d7aefb;">M</div>Mia
-        </li>
-        <li onclick="startChat('Charlotte')">
-          <div class="icon" style="background-color: #a7ffeb;">C</div>Charlotte
-        </li>
-        <li onclick="startChat('Amelia')">
-          <div class="icon" style="background-color: #fdcfe8;">A</div>Amelia
-        </li>
-        <li onclick="startChat('Harper')">
-          <div class="icon" style="background-color: #e6c9a8;">H</div>Harper
-        </li>
-        <li onclick="startChat('Evelyn')">
-          <div class="icon" style="background-color: #ccff90;">E</div>Evelyn
-        </li>
-        <li onclick="startChat('Isabella')">
-          <div class="icon" style="background-color: #fbdc8d;">I</div>Isabella
-        </li>
-      </ul>
-    </div>
 
-    <!-- Chat Section -->
-    <div class="chat">
-      <div class="chat-header" id="chatHeader">Chat</div>
-      <div class="chat-area" id="chatArea"></div>
-      <div class="chat-input">
-        <button id="emojiBtn">😊</button>
-        <div id="emojiPicker" class="hidden"></div>
-        <input id="userInput" type="text" placeholder="Type a message..." />
-        <button id="sendBtn">Send</button>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🍽️ Recipe Finder</div>
+        <ul class="nav-links">
+            <li><a href="#healthy">Healthy Meals</a></li>
+            <li><a href="#quick">Quick Bites</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#drinks">Beverages</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Find Your Perfect Recipe</h1>
+        <p>Discover delicious recipes tailored to your dietary needs</p>
+    </header>
+
+    <!-- Recipe Sections -->
+
+    <!-- Healthy Meals -->
+    <section id="healthy" class="recipe-section">
+        <h2>🥗 Healthy Meals</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.bNED-u8tNhjA5dGuP6VUBAHaGe&pid=Api&P=0&h=180" alt="Salad">
+                <h3>Quinoa Avocado Salad</h3>
+                <p>A refreshing salad with quinoa, avocado, and citrus dressing.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.5JJRVRh31G7yQcE8Wnu-bgHaHa&pid=Api&P=0&h=180" alt="Smoothie">
+                <h3>Berry Protein Smoothie</h3>
+                <p>Boost your energy with a blend of berries and plant-based protein.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://crispyfoodidea.com/wp-content/uploads/2023/10/Grilled-Chicken-and-Veggie-Bowl-Recipe.jpg" alt="Veggie Bowl">
+                <h3>Grilled Veggie Bowl</h3>
+                <p>Mixed grilled vegetables with brown rice and tahini sauce.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.djfKHHURU6Vk0SaB-NYanAHaEK&pid=Api&P=0&h=180" alt="Oatmeal">
+                <h3>Banana Nut Oatmeal</h3>
+                <p>Warm oatmeal topped with bananas, nuts, and honey.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.HrRnj9pCSaSTTCvtXcoGTQHaHa&pid=Api&P=0&h=180" alt="Soup">
+                <h3>Detox Lentil Soup</h3>
+                <p>A wholesome soup with lentils, carrots, and herbs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Bites -->
+    <section id="quick" class="recipe-section">
+        <h2>🍔 Quick Bites</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.VgyS4GqEkHDY-MvaQ8-kVwHaEK&pid=Api&P=0&h=180" alt="Burger">
+                <h3>Veggie Burger</h3>
+                <p>A delicious and healthy plant-based burger with a tangy sauce.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.kJRud282t9-xW12rYamuWgAAAA&pid=Api&P=0&h=180" alt="Pizza">
+                <h3>Cheesy Garlic Bread</h3>
+                <p>Perfectly toasted garlic bread topped with melted cheese.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.-MxdxF6NY27W1L9z_9yZVgHaHa&pid=Api&P=0&h=180" alt="Wrap">
+                <h3>Grilled Chicken Wrap</h3>
+                <p>Soft tortilla filled with grilled chicken, veggies, and sauce.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.OdnDlzkp6lpMnXJGZ0xtkwHaEK&pid=Api&P=0&h=180" alt="Fries">
+                <h3>Sweet Potato Fries</h3>
+                <p>Oven-baked crispy sweet potato fries with a spicy dip.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.9shM3K6_0gEHTxHPka9o6AHaLG&pid=Api&P=0&h=180" alt="Tacos">
+                <h3>Street-Style Tacos</h3>
+                <p>Soft tacos filled with seasoned meat, onions, and cilantro.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts -->
+    <section id="desserts" class="recipe-section">
+        <h2>🍰 Desserts</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.UiRPSiGecK2PHayvBFJe1QHaFj&pid=Api&P=0&h=180" alt="Cake">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Rich, gooey chocolate cake with a molten lava center.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.5zpvRONCi2OWVSv4FWfFtwHaE8&pid=Api&P=0&h=180" alt="Ice Cream">
+                <h3>Vanilla Bean Ice Cream</h3>
+                <p>Homemade vanilla ice cream with real vanilla bean specks.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.3DVdnNbWmU9wVlACLPabIAHaHa&pid=Api&P=0&h=180" alt="Pancakes">
+                <h3>Fluffy Pancakes</h3>
+                <p>Soft and fluffy pancakes topped with maple syrup.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.g4ZFmCupxcmgstNGHxnOJAHaE4&pid=Api&P=0&h=180" alt="Brownies">
+                <h3>Fudge Brownies</h3>
+                <p>Thick and chewy chocolate brownies with a rich texture.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.Y31uBvwfQ6801ED60czMVgHaE7&pid=Api&P=0&h=180" alt="Donuts">
+                <h3>Glazed Donuts</h3>
+                <p>Freshly baked donuts coated with a sweet vanilla glaze.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beverages -->
+    <section id="drinks" class="recipe-section">
+        <h2>🍹 Beverages</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.YQKIFt8G2KRosS0DHWGULQHaEK&pid=Api&P=0&h=180" alt="Coffee">
+                <h3>Caramel Iced Coffee</h3>
+                <p>Cold brewed coffee with caramel syrup and a touch of vanilla.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.cs3LY6qtcS_j-KHPdBgFawHaEo&pid=Api&P=0&h=180" alt="Juice">
+                <h3>Fresh Orange Juice</h3>
+                <p>Freshly squeezed orange juice for a boost of vitamin C.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.hJ8CJsnW2Rsa5p56ejJiGAHaJQ&pid=Api&P=0&h=180" alt="Lemonade">
+                <h3>Mint Lemonade</h3>
+                <p>Refreshing lemonade infused with fresh mint leaves.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.lmmoPxIzL_J8mgtseeSQEwHaLH&pid=Api&P=0&h=180" alt="Matcha">
+                <h3>Iced Matcha Latte</h3>
+                <p>Earthy matcha green tea blended with milk and ice.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.92SWbyYXqwK7kQUPA89P2QHaJW&pid=Api&P=0&h=180" alt="Mocktail">
+                <h3>Tropical Mocktail</h3>
+                <p>A fruity mix of pineapple, orange, and grenadine syrup.</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casual Chat</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <!-- Contacts Section -->
-    <div class="contacts">
-      <div class="contact-header">
-        <h2>Friends</h2>
-      </div>
-      <ul id="contactList">
-        <li onclick="startChat('Ava')">
-          <div class="icon" style="background-color: #f28b82;">A</div>Ava
-        </li>
-        <li onclick="startChat('Olivia')">
-          <div class="icon" style="background-color: #fbbc04;">O</div>Olivia
-        </li>
-        <li onclick="startChat('Emma')">
-          <div class="icon" style="background-color: #34a853;">E</div>Emma
-        </li>
-        <li onclick="startChat('Sophia')">
-          <div class="icon" style="background-color: #4285f4;">S</div>Sophia
-        </li>
-        <li onclick="startChat('Mia')">
-          <div class="icon" style="background-color: #d7aefb;">M</div>Mia
-        </li>
-        <li onclick="startChat('Charlotte')">
-          <div class="icon" style="background-color: #a7ffeb;">C</div>Charlotte
-        </li>
-        <li onclick="startChat('Amelia')">
-          <div class="icon" style="background-color: #fdcfe8;">A</div>Amelia
-        </li>
-        <li onclick="startChat('Harper')">
-          <div class="icon" style="background-color: #e6c9a8;">H</div>Harper
-        </li>
-        <li onclick="startChat('Evelyn')">
-          <div class="icon" style="background-color: #ccff90;">E</div>Evelyn
-        </li>
-        <li onclick="startChat('Isabella')">
-          <div class="icon" style="background-color: #fbdc8d;">I</div>Isabella
-        </li>
-      </ul>
-    </div>
 
-    <!-- Chat Section -->
-    <div class="chat">
-      <div class="chat-header" id="chatHeader">Chat</div>
-      <div class="chat-area" id="chatArea"></div>
-      <div class="chat-input">
-        <button id="emojiBtn">😊</button>
-        <div id="emojiPicker" class="hidden"></div>
-        <input id="userInput" type="text" placeholder="Type a message..." />
-        <button id="sendBtn">Send</button>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
->>>>>>> 542d42221955a65d046a045d481c2eb1fa6fb372
+  
